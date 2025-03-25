@@ -1,0 +1,262 @@
+@font-face {
+    font-family: myFont;
+    src: url(../prstartk.ttf);
+}
+
+:root {
+    --red: #ff0401;
+    --yellow: #f9ed3f;
+    --yellow1: #ffd300;
+    --orange: #ffa002;
+    --lightblue: #01f8f8;
+    --pink: #ff60b0;
+}
+
+html {
+    font-family: myFont;
+    font-size: 1em;
+    color: white;
+    scroll-behavior: smooth;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+hr {
+    border: 1px dotted var(--yellow);
+}
+
+body {
+    text-align: center;
+    margin: 0;
+}
+
+nav {
+
+}
+
+nav ol li {
+    display: inline;
+    padding: 15px;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: white;
+    transition: .5s all ease;
+}
+
+nav ol li a:hover {
+    color: var(--yellow);
+}
+
+#home {
+
+}
+
+#home #logo {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+#home .pac-ghost {
+    margin-bottom: 40px;
+    animation: chasePac 5s infinite linear;
+}
+
+@keyframes chasePac {
+    0% {
+        transform: translate(70vw, 0);
+    }    
+
+    100% {
+        transform: translate(-70vw, 0);
+    }
+}
+
+#home .pac-ghost img {
+    width: 40px;
+    height: 40px;
+}
+
+#home .pac-ghost img:nth-child(1) {
+    transform: scaleX(-1);
+    padding-left: 60px;
+}
+
+#home h3 {
+    margin: 60px 0 120px 0;
+}
+
+#home #coin {
+    animation: coinBlink 1s step-start 0s infinite ;
+}
+
+@keyframes coinBlink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#high-scores {
+    padding: 20vh 10vw 20vh 10vw;
+}
+
+#high-scores h1 {
+    margin-bottom: 30px;
+    color: var(--yellow);
+}
+
+#high-scores .list {
+    display: flex;
+}
+
+#high-scores .list ol {
+    list-style: none;
+    padding: 0;
+}
+
+#high-scores ol li {
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+#high-scores ol li:nth-child(4n+2) {
+    color: var(--orange);
+}
+
+#high-scores ol li:nth-child(4n+3) {
+    color: var(--red);
+}
+
+#high-scores ol li:nth-child(4n+4) {
+    color: var(--lightblue);
+}
+
+#high-scores ol li:nth-child(4n+5) {
+    color: var(--pink);
+}
+
+#high-scores #flist {
+    padding-bottom: 20px;
+}
+
+#high-scores .rank {
+    flex: 1;
+}
+
+#high-scores .score {
+    flex: 1;
+}
+
+#high-scores .name {
+    flex: 1;
+}
+
+#how-to-play {
+    padding: 20vh 20vw 20vh 20vw;
+}
+
+#how-to-play .how-img {
+    margin-bottom: 80px;
+    animation: pacChase 5s infinite linear;
+}
+
+@keyframes pacChase {
+    0% {
+        transform: translate(-70vw, 0);
+    }    
+
+    100% {
+        transform: translate(70vw, 0);
+    }
+}
+
+#how-to-play img {
+    width: 40px;
+    height: auto;
+}
+
+#how-to-play img:nth-child(1) {
+    padding-right: 60px;
+}
+
+#how-to-play #how-f {
+    color: var(--yellow);
+    line-height: 1.2;
+}
+
+#how-to-play span {
+    color: white;
+}
+
+#players {
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+#players .character table {
+    margin: auto;
+}
+
+#players .character th,tr {
+    padding: 20px 20px 20px 20px;
+}
+
+#players .character table img {
+    width: 35px;
+    height: auto;
+    transform: scaleX(-1);
+    padding-left: 20px;
+}
+
+#players .character tr {
+    text-align: left;
+}
+
+#players .character #red {
+    color: var(--red);
+}
+
+#players .character #pink {
+    color: var(--pink);
+}
+
+#players .character #blue {
+    color: var(--lightblue);
+}
+
+#players .character #yellow {
+    color: var(--orange);
+}
+
+#players .pts {
+
+}
+
+#players .pts img {
+    width: 35px;
+    height: auto;
+} 
+
+#players .pts h3 {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#players .pts .box1 {
+    display: inline-block;
+    width: 1.17em;
+    height: 1.17em;
+    background-color: var(--yellow1);
+    margin-left: 20px;
+}
+
+#players .pts .box2 {
+    display: inline-block;
+    width: .5em;
+    height: .5em;
+    background-color: var(--yellow1);
+    margin-bottom: 4px;
+    margin-left: 20px;
+}
+
